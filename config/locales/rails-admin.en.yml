@@ -1,0 +1,195 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+
+
+
+
+
+en:
+  admin:
+    js:
+      true: True
+      false: False
+      is_present: Is present
+      is_blank: Is blank
+      date: Date ...
+      between_and_: Between ... and ...
+      today: Today
+      yesterday: Yesterday
+      this_week: This week
+      last_week: Last week
+      time: Time ...
+      number: Number ...
+      contains: Contains
+      is_exactly: Is exactly
+      starts_with: Starts with
+      ends_with: Ends with
+      too_many_objects: "Too many objects, use search box above"
+      no_objects: "No objects found"
+      clear: Clear
+    loading: "Loading..."
+    toggle_navigation: Toggle navigation
+    home:
+      name: "Перейти на сайт"
+    pagination:
+      previous: "&laquo; Prev"
+      next: "Next &raquo;"
+      truncate: "…"
+    misc:
+      search: "Найти"
+      filter: "Фильтровать"
+      reset_filters: "Reset filters"
+      refresh: "Обновить"
+      show_all: "Показать все"
+      add_filter: "Добавить фильтр"
+      bulk_menu_title: "Выбранные записи"
+      remove: "Удалить запись"
+      add_new: "Создать новую запись"
+      chose_all: "Выбрать все"
+      clear_all: "Очистить все"
+      up: "Вверх"
+      down: "Вниз"
+      navigation: "Навигация"
+      root_navigation: "Actions"
+      navigation_static_label: "Links"
+      log_out: "Log out"
+      time_ago: "%{time} ago"
+      ago: "ago"
+      more: "Plus %{count} more %{models_name}"
+
+
+    flash:
+      successful: "%{name} successfully %{action}"
+      error: "%{name} failed to be %{action}"
+      noaction: "No actions were taken"
+      model_not_found: "Model '%{model}' could not be found"
+      object_not_found: "%{model} with id '%{id}' could not be found"
+    table_headers:
+      model_name: "Название модели"
+      last_created: "Последняя созданная"
+      records: "Записи"
+      username: "Пользователь"
+      changes: "Changes"
+      created_at: "Дата/Время"
+      item: "Item"
+      message: "Message"
+    actions:
+      dashboard:
+        title: "Панель администратора"
+        menu: "Сводная таблица"
+        breadcrumb: "Сводная таблица"
+      index:
+        title: "Все записи %{model_label_plural}"
+        menu: "Список"
+        breadcrumb: "%{model_label_plural}"
+        no_records: "No records found"
+      show:
+        title: "Детали %{model_label} '%{object_label}'"
+        menu: "Показать детали"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Show in app"
+      new:
+        title: "Новая запись %{model_label}"
+        menu: "Добавить записи"
+        breadcrumb: "Новая запись"
+        link: "Добавить записи %{model_label}"
+        done: "Успешно создана"
+      edit:
+        title: "Редактировать запись %{model_label} '%{object_label}'"
+        menu: "Редактировать запись"
+        breadcrumb: "Редактировать запись"
+        link: "Редактировать запись %{model_label}"
+        done: "Успешно отредактирована"
+      delete:
+        title: "Удалить запись %{model_label} '%{object_label}'"
+        menu: "Удалить"
+        breadcrumb: "Удалить"
+        link: "Удалить '%{object_label}'"
+        done: "Удалено"
+      bulk_delete:
+        title: "Удалить %{model_label_plural}"
+        menu: "Удалить выбранные записи"
+        breadcrumb: "Массовое удаление записей"
+        bulk_link: "Удалить выбранное %{model_label_plural}"
+      export:
+        title: "Экспорт %{model_label_plural}"
+        menu: "Экспорт"
+        breadcrumb: "Экспорт"
+        link: "Экспортировать найденные %{model_label_plural}"
+        bulk_link: "Экспортировать выбранные %{model_label_plural}"
+        done: "Экспортировано"
+      history_index:
+        title: "History for %{model_label_plural}"
+        menu: "History"
+        breadcrumb: "History"
+      history_show:
+        title: "History for %{model_label} '%{object_label}'"
+        menu: "History"
+        breadcrumb: "History"
+    form:
+      cancel: "Cancel"
+      basic_info: "Basic info"
+      required: "Required"
+      optional: "Optional"
+      one_char: "character"
+      char_length_up_to: "length up to"
+      char_length_of: "length of"
+      save: "Сохранить"
+      save_and_add_another: "Сохранить и добавить еще запись"
+      save_and_edit: "Сохранить редактирование"
+      delete_file: "Удалить '%{field_label}' #%{number}"
+      all_of_the_following_related_items_will_be_deleted: "? Следующие объекты буду удалены без учета зависимых от них сущностей:"
+      are_you_sure_you_want_to_delete_the_object: "Вы уверены что хотите удалить выбранные записи %{model_name}"
+      confirmation: "Да, я уверен"
+      bulk_delete: "Будьте внимательны, следующие объекты буду удалены без учета зависимых от них сущностей:"
+      new_model: "%{name} (new)"
+    export:
+      confirmation: "Export to %{name}"
+      select: "Select fields to export"
+      select_all_fields: "Select All Fields"
+      fields_from: "Fields from %{name}"
+      fields_from_associated: "Fields from associated %{name}"
+      display: "Display %{name}: %{type}"
+      options_for: "Options for %{name}"
+      empty_value_for_associated_objects: "<empty>"
+      click_to_reverse_selection: 'Click to reverse selection'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Encode to"
+        encoding_to_help: "Choose output encoding. Leave empty to let current input encoding untouched: (%{name})"
+        skip_header: "No header"
+        skip_header_help: "Do not output a header (no fields description)"
+        default_col_sep: ","
+        col_sep: "Column separator"
+        col_sep_help: "Leave blank for default ('%{value}')" # value is default_col_sep

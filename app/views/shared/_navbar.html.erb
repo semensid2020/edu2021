@@ -36,7 +36,7 @@
             <% end %>
             <div id="nav-account-dropdown" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown">
               <% if current_user.admin? %>
-                <%= link_to "Admin Area", admin_root_path, class: "dropdown-item" %>
+                <%= link_to "Панель администратора", admin_root_path, class: "dropdown-item" %>
               <% end %>
               <%= link_to "Настройки", edit_user_registration_path, class: "dropdown-item" %>
               <div class="dropdown-divider"></div>
