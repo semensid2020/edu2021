@@ -1,15 +1,17 @@
 <div class="page-header">
-  <%= link_to rooms_path, class: 'btn btn-default' do %>
-    All Rooms
+  <%= link_to rooms_path, class: 'btn btn-primary' do %>
+    Все комнаты
   <% end %>
-  <%= link_to edit_room_path(@room), class: 'btn btn-primary' do %>
-    Edit
+  <%= link_to edit_room_path(@room), class: 'btn btn-primary', style: 'float: right' do %>
+    Редактировать комнату
   <% end %>
-  <h1>Show room</h1>
+  <div class="col-sm-6" style="text-align: right">
+    <h1>Текущая комната</h1>
+  </div>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Name:</dt>
+
   <dd><%= @room.name %></dd>
 </dl>
 
