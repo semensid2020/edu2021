@@ -1,0 +1,37 @@
+<% if user_signed_in? %>
+  <nav class="drawer drawer--dark">
+    <ul class="drawer-menu" id="mainMenu" data-children=".drawer-submenu">
+      <li class="drawer-menu-item">
+        <a href="/rooms">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.rooms') %></span>
+        </a>
+      </li>
+      <li class="drawer-menu-item">
+        <a href="/predmets">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.predmets_list') %></span>
+        </a>
+      </li>
+      <li class="drawer-menu-item">
+        <a href="/predmets/mine">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.my_predmets') %></span>
+        </a>
+      </li>
+      <li class="drawer-menu-item">
+        <a href="#">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.timetable') %></span>
+        </a>
+      </li>
+      <li class="drawer-menu-item">
+        <a href="#">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.forum_question') %></span>
+        </a>
+      </li>
+      <li class="drawer-menu-item">
+        <a href="#">
+          <span class="drawer-menu-text"> <%= t('sidebar.items.send_email') %></span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+<% end %>

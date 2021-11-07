@@ -1,0 +1,14 @@
+@import 'variables-colors';
+
+
+
+$navbar-height: 50px;
+
+// Sidebar
+$sidebar-width: 256px !default;
+$sidebar-margin-top: $navbar-height +17px !default;
+$mdk-spacer: 1.25rem !default;
+$mdk-drawer-width: 256px !default;
+$mdk-reveal-partial-mask-bg: linear-gradient(to bottom, rgba(255,255,255,0) 60%,rgba(255,255,255,.95) 80%,rgba(255,255,255,1) 100%) !default;
+$mdk-reveal-content-bg: #ffffff !default;
+$mdk-reveal-content-offset-top: 150px !default;

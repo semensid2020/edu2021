@@ -22,4 +22,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
   root to: 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get 'predmets', to: 'predmets#index'  # А пока что постараемся просто вывести список ...
+  get 'predmets/mine', to: 'predmets#show'   # ... всех предметов, на которые записан чувак
+
+
+
 end

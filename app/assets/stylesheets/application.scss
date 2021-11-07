@@ -8,6 +8,8 @@
 @import "jumpstart/sticky-footer";
 @import "jumpstart/announcements";
 
+@import './variables.scss';
+@import "./drawer/drawer";
 // Fixes bootstrap nav-brand container overlap
 @include media-breakpoint-down(xs) {
   .container {
@@ -29,4 +31,29 @@ body > .alert {
 
 .OT_root {
   height: 240px !important;
+}
+
+.mdk-drawer-content {
+  margin-left: 0px;
+   > .container:first-of-type,
+   > .container-fluid:first-of-type,
+   > .container:first-of-type,
+   > .bg-white >
+   .container:first-of-type {
+    padding-right:500px;
+  }
+  > .container { padding-top: 50px; }
+}
+
+
+.mdk-drawer-body-content {
+  margin-left: 300px;
+   > .container:first-of-type,
+   > .container-fluid:first-of-type,
+   > .container:first-of-type,
+   > .bg-white >
+   .container:first-of-type {
+    padding-right:50px;
+  }
+  > .container { padding-top: 200px; }
 }

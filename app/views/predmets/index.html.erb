@@ -1,0 +1,21 @@
+<h1 class="text-center m-5"><%= t("predmets.main_title") %></h1>
+  <table class="table table-bordered table-striped mb-0">
+      <thead>
+          <tr>
+            <th><%= t("predmets.id")%></th>
+            <th><%= t("predmets.name")%></th>
+            <th><%= t("predmets.description")%></th>
+            <th><%= t("predmets.download_link")%></th>
+          </tr>
+      </thead>
+
+      <tbody>
+        <% @predmets.each do |pred| %>
+          <tr>
+            <td><%= pred.id %></td>
+            <td><%= pred.name %></td>
+            <td><%= pred.description %></td>
+            <td><%= pred.book.present? ? (link_to pred.book.filename, rails_blob_path(pred.book, disposition: "attachment")) : 'Материал в разработке' %></td>
+        <% end %>
+      </tbody>
+  </table>

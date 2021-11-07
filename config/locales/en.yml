@@ -31,3 +31,27 @@
 
 en:
   hello: "Hello world"
+
+  sidebar:
+    items:
+      dashboard: 'МОИ РАЗДЕЛЫ'
+      company_profile: '1b. Организация'
+
+      rooms: 'Комнаты видеосвязи'
+      products: 'd1. Товары и услуги'
+      operations: '1e. Операции'
+      templates: 1f. 'Шаблоны'
+      predmets_list: 'Список предметов'
+      my_predmets: 'Мои предметы'
+      timetable: 'Расписание'
+      forum_question: 'Задать вопрос в чате'
+      send_email: 'Отправить обращение'
+
+  predmets:
+    main_title: 'Все предметы'
+    your_title: 'Ваши предметы'
+    id: 'ID предмета'
+    name: 'Название предмета'
+    description: 'Описание'
+    download_link: 'Скачать учебник'
+    teacher_namee: 'Преподаватель'
