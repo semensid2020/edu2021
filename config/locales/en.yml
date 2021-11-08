@@ -48,7 +48,7 @@ en:
       templates: 1f. 'Шаблоны'
       predmets_list: 'Список предметов'
       my_predmets: 'Мои предметы'
-      timetable: 'Расписание'
+      checkings: 'Загрузить на проверку'
       forum_question: 'Задать вопрос в чате'
       send_email: 'Отправить обращение'
 
@@ -60,3 +60,12 @@ en:
     description: 'Описание'
     download_link: 'Скачать учебник'
     teacher_namee: 'Преподаватель'
+
+  checkings:
+    main_title: 'Мои загрузки на проверку'
+    your_title: 'Мои загрузки на проверку'
+    id: 'ID загрузки'
+    predmet_name: 'Название предмета'
+    download_link: 'Загруженные материалы'
+    teacher_namee: 'Преподаватель'
+    upload_link: 'Загрузить файл на проверку'

@@ -1,0 +1,20 @@
+<h1 class="text-center m-5"><%= t("checkings.main_title") %></h1>
+  <table class="table table-bordered table-striped mb-0">
+      <thead>
+          <tr>
+            <th><%= t("checkings.id")%></th>
+            <th><%= t("checkings.predmet_name")%></th>
+            <th><%= t("checkings.download_link")%></th>
+          </tr>
+      </thead>
+
+
+  <tbody>
+    <% @checkings.each do |checking| %>
+      <tr>
+        <td><%= checking.id %></td>
+        <td><%= checking.name%></td>
+        <td><%= checking.studentwork.present? ? (link_to checking.studentwork.filename, rails_blob_path(checking.studentwork, disposition: "attachment")) : 'Материалы не загружены' %></td>
+    <% end %>
+  </tbody>
+</table>

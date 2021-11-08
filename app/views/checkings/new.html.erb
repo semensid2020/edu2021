@@ -1,0 +1,24 @@
+<h1>Новая проверка</h1>
+
+  <%= form_for @checking do |f| %>
+
+  <table class="table table-bordered table-striped mb-0">
+    <thead>
+      <th><%= f.label 'Название работы' %></th>
+      <th><%= f.label 'Выберите файл для загрузки' %></th>
+
+    </thead>
+
+      <tbody>
+        <td><%= f.text_field :name, class: 'form-control' %>    </td>
+        <td><%= f.file_field :student_work, accept: 'application/pdf', class: 'file-upload'%></td>
+    </tbody>
+</table>
+
+
+    <div class="form-group" style="padding-top: 40px">
+      <%= f.submit class: 'btn btn-primary ' %>
+      <%= link_to "Cancel", '/checkings', class: "btn btn-link" %>
+    </div>
+
+  <% end %>

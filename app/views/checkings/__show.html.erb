@@ -1,4 +1,4 @@
-<h1 class="text-center m-5"><%= t("chekings.main_title") %></h1>
+<h1 class="text-center m-5"><%= t("predmets.your_title") %></h1>
   <table class="table table-bordered table-striped mb-0">
       <thead>
           <tr>
@@ -6,6 +6,7 @@
             <th><%= t("predmets.name")%></th>
             <th><%= t("predmets.description")%></th>
             <th><%= t("predmets.download_link")%></th>
+            <th><%= t("predmets.upload_link")%></th>
           </tr>
       </thead>
 
@@ -16,6 +17,9 @@
             <td><%= pred.name %></td>
             <td><%= pred.description %></td>
             <td><%= pred.book.present? ? (link_to pred.book.filename, rails_blob_path(pred.book, disposition: "attachment")) : 'Материал в разработке' %></td>
+            <%= form_for @predmets do |f| %>
+              <td><%= pred.file_field :task, accept: 'application/pdf', class: 'image-upload'%>/td>
+            <% end %>
         <% end %>
       </tbody>
   </table>

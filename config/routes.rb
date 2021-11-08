@@ -24,9 +24,10 @@ Rails.application.routes.draw do
   root to: 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  get 'predmets', to: 'predmets#index'  # А пока что постараемся просто вывести список ...
+  get 'predmets',      to: 'predmets#index'  # А пока что постараемся просто вывести список ...
   get 'predmets/mine', to: 'predmets#show'   # ... всех предметов, на которые записан чувак
-
-
+  get 'checkings',     to: 'checkings#index'
+  get 'checkings/new', to: 'checkings#new'
+  post 'checkings',    to: 'checkings#create'
 
 end
