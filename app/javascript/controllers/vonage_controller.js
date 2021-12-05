@@ -14,6 +14,7 @@ export default class extends Controller {
     }
   }
 
+  // Создание сессии
   initializeSession() {
     this.session = OT.initSession(this.apiKey, this.sessionId)
     this.session.on('streamCreated', this.streamCreated.bind(this))
@@ -28,6 +29,7 @@ export default class extends Controller {
     this.session.connect(this.token, this.streamConnected.bind(this))
   }
 
+  // Обработка ошибок
   streamConnected(error) {
     if (error) {
       this.handleError(error)
@@ -36,6 +38,7 @@ export default class extends Controller {
     }
   }
 
+  // Видеопоток создан
   streamCreated(event) {
     this.session.subscribe(event.stream, this.element, {
       insertMode: 'append',
@@ -44,6 +47,7 @@ export default class extends Controller {
     }, this.handleError.bind(this))
   }
 
+  // Обработка ошибок 2
   handleError(error) {
     if (error) {
       console.error(error.message)

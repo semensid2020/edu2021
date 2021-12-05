@@ -9,12 +9,9 @@
     <h1>Текущая комната</h1>
   </div>
 </div>
-
 <dl class="dl-horizontal">
-
   <dd><%= @room.name %></dd>
 </dl>
-
 <div id="videos"
      data-controller="vonage"
      data-vonage-api-key="<%= Rails.application.credentials.vonage_api_key %>"

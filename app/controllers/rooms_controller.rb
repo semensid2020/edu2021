@@ -12,6 +12,7 @@ class RoomsController < ApplicationController
   # GET /rooms/1.json
   def show
     opentok = OpenTok::OpenTok.new Rails.application.credentials.vonage_api_key, Rails.application.credentials.vonage_api_secret
+
     @token = opentok.generate_token @room.vonage_session_id, { name: current_user.name }
   end
 
@@ -31,7 +32,7 @@ class RoomsController < ApplicationController
 
     respond_to do |format|
       if @room.save
-        format.html { redirect_to @room, notice: 'Room was successfully created.' }
+        format.html { redirect_to @room, notice: 'Комната была успешно создана.' }
         format.json { render :show, status: :created, location: @room }
       else
         format.html { render :new }
@@ -45,7 +46,7 @@ class RoomsController < ApplicationController
   def update
     respond_to do |format|
       if @room.update(room_params)
-        format.html { redirect_to @room, notice: 'Room was successfully updated.' }
+        format.html { redirect_to @room, notice: 'Комната была успешно обновлена.' }
         format.json { render :show, status: :ok, location: @room }
       else
         format.html { render :edit }
@@ -59,7 +60,7 @@ class RoomsController < ApplicationController
   def destroy
     @room.destroy
     respond_to do |format|
-      format.html { redirect_to rooms_url, notice: 'Room was successfully destroyed.' }
+      format.html { redirect_to rooms_url, notice: 'Комната была успешно удалена.' }
       format.json { head :no_content }
     end
   end
